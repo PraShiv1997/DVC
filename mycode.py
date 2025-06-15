@@ -5,6 +5,11 @@ data = {'Name': ['Alice','Bob','Charlie'],'Age':[25,30,35], 'City':['NewYork','A
 
 df = pd.DataFrame(data)
 
+new_row_loc = {'Name':'GF1', 'Age':20, 'City':'Pune'}
+df.loc[len(df.index)] = new_row_loc
+    
+    
+
 data_dir = 'data'
 os.makedirs(data_dir, exist_ok=True)
 
